@@ -1,14 +1,9 @@
 body {
     font: 20px Montserrat, sans-serif;
     line-height: 1.8;
-    color: #f5f6f7;
+    color: #949494;
 }
-p {font-size: 16px;}
-.margin {margin-bottom: 45px;}
-.bg-1 { 
-    background-color: #1abc9c; /* Green */
-    color: #ffffff;
-}
+
 .bg-2 { 
     background-color: #474e5d; /* Dark Blue */
     color: #ffffff;
@@ -24,6 +19,7 @@ p {font-size: 16px;}
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
+    padding-right: 0%;
 }
 .navbar {
     padding-top: 15px;
@@ -42,4 +38,10 @@ p {font-size: 16px;}
 }
 .logo {
     width: 80px;
+}
+.section-1{
+ padding-right: 0%;
+}
+.section-2{
+
 }
