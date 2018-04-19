@@ -16,6 +16,46 @@ body {
     background-color: #2f2f2f; /* Black Gray */
     color: #fff;
 }
+.thumbnail > .caption > h3 {
+    font-size: 19px;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width:  100% ;
+    margin: auto ;
+}
+.carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+}
+.carousel-caption h3 {
+    color: #fff !important;
+}
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+}
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+}
+.panel-footer {
+    background-color: white !important;
+}
+.panel-footer h3 {
+    font-size: 32px;
+}
+.panel-footer h4 p {
+    color: rgb(78, 78, 78);
+    font-size: 14px;
+}
+.panel-footer .btn {
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
+}
 footer {
     background-color: #2d2d30;
     color: #f5f5f5;
