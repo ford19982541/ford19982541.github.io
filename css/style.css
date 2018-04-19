@@ -19,6 +19,9 @@ body {
 .thumbnail > .caption > h3 {
     font-size: 19px;
 }
+.thumbnail >h1{
+    color: #0f0f0f;
+}
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
     width:  100% ;
