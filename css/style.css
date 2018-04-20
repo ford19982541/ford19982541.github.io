@@ -27,6 +27,7 @@ body {
     width:  100% ;
     margin: auto ;
 }
+
 .carousel-inner img {
     width: 100%; /* Set width to 100% */
     margin: auto;
@@ -39,6 +40,7 @@ body {
         display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
     }
 }
+
 footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
