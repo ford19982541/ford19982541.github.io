@@ -27,7 +27,13 @@ body {
     width:  100% ;
     margin: auto ;
 }
-
+.thumbnail-3{
+    width:27rem;
+    height: 27rem;
+}
+.name-title {
+    margin-left: 20px;
+}
 .carousel-inner img {
     width: 100%; /* Set width to 100% */
     margin: auto;
@@ -70,7 +76,7 @@ footer a {
     color: #f5f5f5;
 }
 footer a:hover {
-    color: #2b2b2b;
+    color: #f4511e;
     text-decoration: none;
 }
 .container-fluid {
@@ -101,4 +107,13 @@ footer a:hover {
 }
 .section-2{
     margin-top: 0%;
+}
+.section-3{
+    margin-top: 0%;
+}
+.section-4{
+    margin-top: 0%;
+}
+.content {
+    margin-top: 50px;
 }
