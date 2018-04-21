@@ -27,9 +27,8 @@ body {
     width:  100% ;
     margin: auto ;
 }
-.thumbnail-3{
-    width:27rem;
-    height: 27rem;
+.h1-title{
+    color: #0f0f0f;
 }
 .name-title {
     margin-left: 20px;
