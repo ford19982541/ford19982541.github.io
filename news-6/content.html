@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Penkhaw</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        .row.content {
+            height: 450px;
+            margin-top: 10%;
+
+        }
+
+        .sidenav {
+            padding-top: 20px;
+            background-color: #f1f1f1;
+            height: 100%;
+        }
+/
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+            .row.content {height:auto;}
+        }
+        .thumbnail .caption {
+            padding-right: 80px;
+            padding-left: 80px;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html" ><img src="../img/logo.png" class="logo" alt="Pankhaw"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li><a href="../index.html">หน้าหลัก</a></li>
+
+
+                </ul>
+            </div>
+
+    </nav>
+
+</header>
+<div class="navbar navbar-default" id="myPage">
+
+    </div>
+<div class="content">
+    <div class="container ">
+        <div class="row ">
+            <div class="col-12 col-lg-12">
+                <div class="thumbnail">
+                    <h1 class="text-center">เปิดเรตติ้งตอนแรก หนึ่งด้าวฟ้าเดียว เทียบบุพเพสันนิวาส</h1>
+                    <hr>
+                    <img src="img/hightlight.jpg" height="1000" width="1000" class="img-responsive">
+                    <hr>
+
+                    <div class="caption">
+                        <p>&nbsp;&nbsp;
+						&nbsp;&nbsp;ออกอากาศตอนแรกไปเมื่อคืนที่ผ่านมา สำหรับละครเรื่องหนึ่งด้าวฟ้าเดียว ซึ่งมาแทนละครดังที่สร้างปรากฏการณ์อย่าง บุพเพสันนิวาส 
+						</p>
+				<br>
+				<br>
+						<p>&nbsp;&nbsp;
+						&nbsp;&nbsp;ซึ่งผลเรตติ้งที่ออกมา หนึ่งด้าวฟ้าเดียว ทำไปได้ 4.76 ซึ่งถือว่าไม่ได้แย่มาก เมื่อเทียบกับ บุพเพสันนิวาสตอนแรกที่ทำไปได้ 3.41 
+						</p>
+				<br>
+
+						<p>&nbsp;&nbsp;
+						&nbsp;&nbsp;อย่างไรก็ตามคงต้องรอดูว่า หลังจากนี้ผู้ชมจะตอบรับมากขึ้นเรื่อยๆ เหมือนกระแสของบุพเพสันนิวาสหรือไม่ หรือว่าจะทรงตัวอยู่เพียงเท่านี้ 
+						</p>
+                        <hr>
+                        <h3>Credit</h3>
+                        <p>thairath</p>
+                        <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fford19982541.github.io%2Fnews-1%2Fcontent.html&layout=button&size=large&mobile_iframe=true&width=65&height=28&appId" width="65" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="container-fluid text-center">
+        <a href="#myPage" title="To Top">
+          <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <p>By Chissanupong & Nitikorn <a href="https://www.ford19982541.github.io" title="Visit github">www.ford19982541.github.io</a></p>
+    </footer>
+<script>
+    $(document).ready(function(){
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+
+        $(window).scroll(function() {
+            $(".slideanim").each(function(){
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide");
+                }
+            });
+        });
+    })
+</script>
+</body>
+</html>
