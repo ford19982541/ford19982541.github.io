@@ -3,7 +3,11 @@ body {
     line-height: 1.8;
     color: #949494;
 }
-
+.null{
+    width : 120px;
+    height: 80px;
+    background-color: white;
+}
 .bg-2 { 
     background-color: #474e5d; /* Dark Blue */
     color: #ffffff;
