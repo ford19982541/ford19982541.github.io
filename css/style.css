@@ -1,7 +1,7 @@
 body {
     font: 20px Montserrat, sans-serif;
     line-height: 1.8;
-    color: #949494;
+
 }
 .null{
     width : 120px;
@@ -22,6 +22,10 @@ body {
 }
 .thumbnail > .caption > h3 {
     font-size: 19px;
+}
+.thumbnail > .caption  {
+    margin-left: -50px;
+    margin-right: -50px;
 }
 .thumbnail >h1{
     color: #0f0f0f;
