@@ -8,25 +8,22 @@ body {
     height: 80px;
     background-color: white;
 }
-.bg-2 { 
+.bg-2 {
     background-color: #474e5d; /* Dark Blue */
     color: #ffffff;
 }
-.bg-3 { 
+.bg-3 {
     background-color: #ffffff; /* White */
     color: #555555;
 }
-.bg-4 { 
+.bg-4 {
     background-color: #2f2f2f; /* Black Gray */
     color: #fff;
 }
 .thumbnail > .caption > h3 {
     font-size: 19px;
 }
-.thumbnail > .caption  {
-    margin-left: -50px;
-    margin-right: -50px;
-}
+
 .thumbnail >h1{
     color: #0f0f0f;
 }

@@ -22,24 +22,24 @@
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-            <span class="icon-bar"></span>                        
+            <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="#myPage" ><img src="img/logo.png" class="logo" alt="Pankhaw"></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
-          
+
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#myPage">หน้าหลัก</a></li>
             <li><a href="#hotnews">ข่าวดัง</a></li>
             <li><a href="#entertain">ข่าวบันเทิง</a></li>
             <li><a href="#sport">ข่าวกีฬา</a></li>
-         
-            
+
+
           </ul>
         </div>
       </div>
     </nav>
-    
+
 </header>
 <!--Carousel-->
 <div class="section-1" id="myPage">
@@ -53,7 +53,7 @@
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
               </ol>
-            
+
               <!-- Wrapper for slides -->
               <div class="carousel-inner">
                 <div class="item active">
@@ -63,7 +63,7 @@
                     <p>LA is always so much fun!</p>
                   </div>
                 </div>
-            
+
                 <div class="item">
                   <img src="news-2/img/cover.jpg" alt="Chicago">
                   <div class="carousel-caption">
@@ -71,7 +71,7 @@
                     <p>Thank you, Chicago!</p>
                   </div>
                 </div>
-            
+
                 <div class="item">
                   <img src="news-3/img/cover.jpg" alt="New York">
                   <div class="carousel-caption">
@@ -80,7 +80,7 @@
                   </div>
                 </div>
               </div>
-            
+
               <!-- Left and right controls -->
               <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left"></span>
@@ -90,7 +90,7 @@
                 <span class="glyphicon glyphicon-chevron-right"></span>
                 <span class="sr-only">Next</span>
               </a>
-            </div>    
+            </div>
       </div>
     </div>
   </div>
@@ -98,12 +98,12 @@
 <!--Content-->
 <div class="navbar null navbar-default" id="hotnews">
 </div>
-<div class="section-">
+<div class="section-1">
   <div class="container">
     <div class="row">
+      <div class="col-12">
                 <h1 class="name-title">ข่าวดัง</h1>
                 <div class="col-12 col-lg-6">
-
                     <div class="thumbnail">
                         <img src="news-1/img/hightlight.jpg" alt="...">
                         <div class="caption">
@@ -153,9 +153,8 @@
                         </div>
                     </div>
                 </div>
-
-
-  
+            </div>
+          </div>
     </div>
   </div>
 </div>
@@ -223,9 +222,9 @@
   <div class="section-4">
       <div class="container">
         <div class="row">
-          <h1 class="name-title">ข่าวดัง</h1>
+          <h1 class="name-title">ข่าวกีฬา</h1>
           <div class="col-12 col-lg-6">
-    
+
               <div class="thumbnail">
                   <img src="news-1/img/hightlight.jpg" alt="...">
                   <div class="caption">
@@ -234,14 +233,14 @@
                   </div>
                 </div>
           </div>
-    
+
           <div class="col-12 col-sm-3">
               <div class="thumbnail ">
                 <img src="news-2/img/hightlight.jpg" alt="...">
                 <div class="caption">
                   <h5>เมีย "หนุ่มหน้าปาน" สุดช้ำเจอคอมเมนต์เหยียดหน้าตา ไม่ขอพูดถึงสามีเก่า</h5>
                   <p><a href="news-2/connent.html" class="btn btn-success" role="button">อ่านต่อ</a></p>
-                  
+
                 </div>
               </div>
           </div>
@@ -251,7 +250,7 @@
                 <div class="caption">
                   <h5>พ่อเด็ก 4 ขวบ ซัดป้าเก๋งป้ายแดง ถึงเป็นชาวสวน 108 ไร่ ไม่คิดหยามใครต่ำ</h5>
                   <p><a href="news-3/content.html" class="btn btn-success" role="button">อ่านต่อ</a></p>
-                  
+
                 </div>
               </div>
           </div>
@@ -261,7 +260,7 @@
                 <div class="caption">
                     <h3>Thumbnail label</h3>
                     <p><a href="news-1/content.html" class="btn btn-success" role="button">อ่านต่อ</a></p>
-                    
+
                 </div>
             </div>
           </div>
@@ -271,14 +270,14 @@
                 <div class="caption">
                   <h3>Thumbnail label</h3>
                   <p><a href="news-1/content.html" class="btn btn-success" role="button">อ่านต่อ</a></p>
-                  
+
                 </div>
               </div>
           </div>
-      
+
         </div>
       </div>
-    </div>  
+    </div>
 <footer class="container-fluid text-center">
     <a href="#myPage" title="To Top">
       <span class="glyphicon glyphicon-chevron-up"></span>
@@ -293,26 +292,26 @@
         if (this.hash !== "") {
           // Prevent default anchor click behavior
           event.preventDefault();
-    
+
           // Store hash
           var hash = this.hash;
-    
+
           // Using jQuery's animate() method to add smooth page scroll
           // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
           $('html, body').animate({
             scrollTop: $(hash).offset().top
           }, 900, function(){
-       
+
             // Add hash (#) to URL when done scrolling (default click behavior)
             window.location.hash = hash;
           });
         } // End if
       });
-      
+
       $(window).scroll(function() {
         $(".slideanim").each(function(){
           var pos = $(this).offset().top;
-    
+
           var winTop = $(window).scrollTop();
             if (pos < winTop + 600) {
               $(this).addClass("slide");
